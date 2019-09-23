@@ -1,0 +1,52 @@
+{
+  "name": "fair-data-api",
+  "version": "1.0.0",
+  "description": "fair-data-api",
+  "keywords": [
+    "loopback-application",
+    "loopback"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.9"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rimraf dist *.tsbuildinfo",
+    "pretest": "npm run clean && npm run build",
+    "migrate": "node ./dist/migrate",
+    "start": "npm run build && node -r source-map-support/register .",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "license": "",
+  "files": [
+    "README.md",
+    "index.js",
+    "index.d.ts",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
+  "dependencies": {
+    "@loopback/boot": "^1.4.4",
+    "@loopback/context": "^1.20.2",
+    "@loopback/core": "^1.8.5",
+    "@loopback/openapi-v3": "^1.7.0",
+    "@loopback/repository": "^1.8.2",
+    "@loopback/rest": "^1.16.3",
+    "@loopback/rest-explorer": "^1.2.5",
+    "@types/mocha": "^5.2.7"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.0",
+    "source-map-support": "^0.5.12",
+    "@loopback/testlab": "^1.6.3",
+    "@types/node": "^10.14.10",
+    "typescript": "~3.6.3"
+  }
+}

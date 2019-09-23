@@ -1,0 +1,11 @@
+{
+  "ids": {
+    "Dataset": 8
+  },
+  "models": {
+    "Dataset": {
+      "string": "{\"PID\":\"string\",\"Title\":\"string\",\"isPublic\":true,\"creationDate\":\"2019-09-23T11:59:26.902Z\"}",
+      "string2": "{\"PID\":\"string2\",\"Title\":\"string\",\"isPublic\":true,\"creationDate\":\"2019-09-23T11:59:26.902Z\"}"
+    }
+  }
+}
